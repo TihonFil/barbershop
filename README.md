@@ -1,0 +1,2 @@
+# barbershop
+barbershop landing page
