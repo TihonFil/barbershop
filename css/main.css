@@ -3,11 +3,34 @@
 }
 
 body {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .header {
-  background-color: #1a1a1a;
+  background-color: #262626;
+}
+
+.header__wrap {
+  align-items: center;
+  padding: 10px 0;
 }
 
 .header__logo-img {
@@ -16,16 +39,48 @@ body {
   padding: 5px;
 }
 
-.header__wrap {
-  align-items: center;
-  padding: 10px 0;
-}
-
 .header__colm {
   text-align: center;
+}
+
+.header__title {
+  font-family: "Potta One", cursive;
+  font-size: 38px;
+}
+
+.header__text {
+  font-family: "Potta One", cursive;
+  font-size: 28px;
 }
 
 .header__contact {
   display: flex;
   flex-direction: column;
+}
+
+.header__contact a {
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.header__nav-list {
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.header__nav-item {
+  padding: 5px 0;
+}
+
+.header__nav-link {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+@media (min-width: 991px) {
+  .header__nav-item {
+    padding: 10px 40px;
+  }
 }
