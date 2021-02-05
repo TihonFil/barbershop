@@ -1,0 +1,23 @@
+.header {
+   background-color: #1a1a1a;
+}
+
+.header__logo-img {
+   background-color: $white;
+   border-radius: 50%;
+   padding: 5px;
+}
+
+.header__wrap {
+   align-items: center;
+   padding: 10px 0;
+}
+
+.header__colm {
+   text-align: center;
+}
+
+.header__contact {
+   display: flex;
+   flex-direction: column;
+}

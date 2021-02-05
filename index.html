@@ -5,8 +5,53 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>barbershop</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+      <link rel="stylesheet" href="css/normalize.css" />
+      <link rel="stylesheet" href="css/main.css" />
    </head>
    <body>
+      <header class="header">
+         <div class="container">
+            <div class="row header__wrap">
+               <div class="col header__colm">
+                  <img src="images/logo.svg" alt="scissors and comb" width="70" height="70" class="header__logo-img" />
+               </div>
+               <div class="col header__colm">
+                  <h2 class="header__title">Borbershop</h2>
+               </div>
+               <div class="col header__colm">
+                  <div class="header__contact">
+                     <a href="tel:+7 (123) 123 45 67" class="header__contact-telephone">+7 (123) 123 45 67</a>
+                     <a href="#" class="header__contact-social">Вконтакте</a>
+                     <a href="#" class="header__contact-social">WhatsApp</a>
+                  </div>
+               </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light header__nav">
+               <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse header__nav-wrap" id="navbarNav">
+                  <ul class="navbar-nav header__nav-list">
+                     <li class="nav-item header__nav-item">
+                        <a class="nav-link header__nav-link" aria-current="page" href="#">О нас</a>
+                     </li>
+                     <li class="nav-item header__nav-item">
+                        <a class="nav-link header__nav-link" href="#">Прай-лист</a>
+                     </li>
+                     <li class="nav-item header__nav-item">
+                        <a class="nav-link header__nav-link" href="#">Новости</a>
+                     </li>
+                     <li class="nav-item header__nav-item">
+                        <a class="nav-link header__nav-link" href="#">Галерея</a>
+                     </li>
+                     <li class="nav-item header__nav-item">
+                        <a class="nav-link header__nav-link" href="#">Контакты</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
       <!-- JavaScript Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
    </body>
