@@ -25,7 +25,9 @@ a {
 }
 
 .header {
-  background-color: #262626;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__wrap {
@@ -46,11 +48,14 @@ a {
 .header__title {
   font-family: "Potta One", cursive;
   font-size: 38px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
 }
 
 .header__text {
   font-family: "Potta One", cursive;
-  font-size: 28px;
+  font-size: 32px;
+  padding-top: 5px;
 }
 
 .header__contact {
