@@ -28,11 +28,12 @@ a {
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  letter-spacing: 1px;
 }
 
 .header__wrap {
   align-items: center;
-  padding: 10px 0;
+  padding-top: 5px;
 }
 
 .header__logo-img {
@@ -82,10 +83,35 @@ a {
 .header__nav-link {
   color: #ffffff;
   font-size: 21px;
+  transition: all 0.2s linear;
+}
+
+.header__nav-link:hover {
+  color: #e6ac00;
 }
 
 @media (min-width: 991px) {
   .header__nav-item {
     padding: 10px 40px;
   }
+}
+
+.intro {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.intro__colm {
+  text-align: center;
+}
+
+.intro__colm-title {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  padding-top: 45px;
+}
+
+.intro__colm-text {
+  letter-spacing: 1px;
 }

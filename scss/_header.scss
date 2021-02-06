@@ -3,11 +3,12 @@
    background-image: url(../images/background.png);
    background-repeat: no-repeat;
    background-size: cover;
+   letter-spacing: 1px;
 }
 
 .header__wrap {
    align-items: center;
-   padding: 10px 0;
+   padding-top: 5px;
 }
 
 .header__logo-img {
@@ -57,6 +58,10 @@
 .header__nav-link {
    color: $white;
    font-size: 21px;
+   transition: all 0.2s linear;
+   &:hover {
+      color: $orange-hover;
+   }
 }
 
 @media (min-width: 991px) {
