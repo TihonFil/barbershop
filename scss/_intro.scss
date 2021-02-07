@@ -1,10 +1,29 @@
 .intro {
+   position: relative;
    background-color: $bg-white;
    color: $black;
 }
 
+.intro__wrap {
+   padding: 0 50px;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      width: 2px;
+      height: 200px;
+      background: linear-gradient($line, $bg-blackk);
+      box-shadow: 0 0 12px 1px $line;
+   }
+}
+
 .intro__colm {
    text-align: center;
+}
+
+.intro__colm + .intro__colm {
+   padding-left: 100px;
 }
 
 .intro__colm-title {
@@ -12,8 +31,21 @@
    line-height: 42px;
    font-weight: bold;
    padding-top: 45px;
+   padding-bottom: 15px;
 }
 
 .intro__colm-text {
-   letter-spacing: 1px;
+   position: relative;
+   padding-bottom: 20px;
+}
+
+.intro__colm-text + .intro__colm-text:after {
+   content: "";
+   position: absolute;
+   left: 45%;
+   top: -18px;
+   width: 50px;
+   height: 1px;
+   background-color: $line;
+   box-shadow: 0 0 7px 1px $orange-hover;
 }

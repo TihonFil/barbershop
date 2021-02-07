@@ -26,6 +26,7 @@
    font-size: 38px;
    letter-spacing: 6px;
    text-transform: uppercase;
+   color: $orange-hover;
 }
 
 .header__text {
@@ -44,6 +45,13 @@
    font-weight: bold;
    padding-top: 5px;
    margin: auto;
+}
+
+.header__contact-telephone {
+   transition: all 0.2s linear;
+   &:hover {
+      color: $orange-hover;
+   }
 }
 
 .header__nav-list {
