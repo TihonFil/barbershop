@@ -1,0 +1,25 @@
+.services {
+   color: $black;
+   padding-top: 60px;
+}
+
+.services__wrap {
+   background-color: $bg-white;
+   position: relative;
+   border-radius: 4px;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -34px;
+      transform: translate(-50%);
+      width: 100px;
+      height: 4px;
+      background-color: $orange-hover;
+   }
+}
+
+.services__title {
+   text-align: center;
+   padding: 30px 0;
+}
