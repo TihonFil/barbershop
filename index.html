@@ -16,16 +16,16 @@
          <header class="header">
             <div class="container">
                <div class="row header__wrap">
-                  <div class="col header__colm">
+                  <div class="col-md-2 header__colm">
                      <a href="" class="header__logo-link">
                         <img src="images/logo.svg" alt="scissors and comb" width="70" height="70" class="header__logo-img" />
                      </a>
                   </div>
-                  <div class="col header__colm">
+                  <div class="offset-md-2 col-md-4 header__colm">
                      <h2 class="header__title">Archi</h2>
                      <p class="header__text">barbershop</p>
                   </div>
-                  <div class="col header__colm">
+                  <div class="offset-md-1 col-md-3 header__colm">
                      <div class="header__contact">
                         <a href="tel:+7 (123) 123 45 67" class="header__contact-telephone">+7 (123) 123 45 67</a>
                         <a href="#" class="header__contact-social">
@@ -43,13 +43,10 @@
                   <div class="collapse navbar-collapse header__nav-wrap" id="navbarNav">
                      <ul class="navbar-nav header__nav-list">
                         <li class="nav-item header__nav-item">
-                           <a class="nav-link header__nav-link" aria-current="page" href="#">О нас</a>
-                        </li>
-                        <li class="nav-item header__nav-item">
-                           <a class="nav-link header__nav-link" href="#">Прай-лист</a>
-                        </li>
-                        <li class="nav-item header__nav-item">
                            <a class="nav-link header__nav-link" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item header__nav-item">
+                           <a class="nav-link header__nav-link" href="#">Прайс-лист</a>
                         </li>
                         <li class="nav-item header__nav-item">
                            <a class="nav-link header__nav-link" href="#">Галерея</a>
@@ -66,16 +63,35 @@
             <div class="container">
                <h1 class="visually-hidden">barbershop Archi</h1>
                <div class="row intro__wrap">
-                  <div class="col intro__colm">
-                     <h2 class="intro__colm-title title">О нас</h2>
-                     <p class="intro__colm-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ex ab, est porro similique consectetur vitae consequuntur eos dolores obcaecati sequi sapiente laborum perferendis inventore voluptatum doloremque optio nobis eligendi!</p>
-                     <p class="intro__colm-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis doloribus eum laborum rerum, consectetur est quo earum tempore quas tenetur animi repellat voluptatem doloremque reprehenderit, numquam a, reiciendis libero.</p>
-                  </div>
-                  <div class="col intro__colm">
+                  <div class="col-md-5 intro__colm">
                      <h2 class="intro__colm-title title">Новости</h2>
                      <p class="intro__colm-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ex ab, est porro similique consectetur vitae consequuntur eos dolores obcaecati sequi sapiente laborum perferendis inventore voluptatum doloremque optio nobis eligendi!</p>
                      <p class="intro__colm-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis doloribus eum laborum rerum, consectetur est quo earum tempore quas tenetur animi repellat voluptatem doloremque reprehenderit, numquam a, reiciendis libero.</p>
                      <p class="intro__colm-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt, animi maiores odio dignissimos accusantium totam modi repellat autem ipsam soluta consequuntur similique necessitatibus deleniti nobis itaque a fuga velit!</p>
+                  </div>
+                  <div class="offset-md-2 col-md-5 intro__colm">
+                     <h2 class="intro__colm-title title">Галерея</h2>
+                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <img src="images/people-1.jpeg" width="350" height="300" class="d-block w-100" alt="..." />
+                           </div>
+                           <div class="carousel-item">
+                              <img src="images/people-2.jpeg" width="350" height="300" class="d-block w-100" alt="..." />
+                           </div>
+                           <div class="carousel-item">
+                              <img src="images/people-3.jpeg" width="350" height="300" class="d-block w-100" alt="..." />
+                           </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>

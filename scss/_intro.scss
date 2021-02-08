@@ -24,13 +24,9 @@
    text-align: center;
 }
 
-.intro__colm + .intro__colm {
-   padding-left: 100px;
-}
-
 .intro__colm-title {
    padding-top: 45px;
-   padding-bottom: 15px;
+   padding-bottom: 25px;
 }
 
 .intro__colm-text {
@@ -45,7 +41,6 @@
    top: -18px;
    transform: translate(-50%);
    width: 50px;
-   height: 1px;
-   background-color: $line;
-   box-shadow: 0 0 7px 1px $orange-hover;
+   height: 2px;
+   background-color: $orange-hover;
 }

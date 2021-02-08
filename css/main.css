@@ -142,13 +142,9 @@ a {
   text-align: center;
 }
 
-.intro__colm + .intro__colm {
-  padding-left: 100px;
-}
-
 .intro__colm-title {
   padding-top: 45px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .intro__colm-text {
@@ -163,14 +159,13 @@ a {
   top: -18px;
   transform: translate(-50%);
   width: 50px;
-  height: 1px;
-  background-color: #b3b3b3;
-  box-shadow: 0 0 7px 1px #e6ac00;
+  height: 2px;
+  background-color: #e6ac00;
 }
 
 .services {
   color: #000000;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .services__wrap {
@@ -183,7 +178,7 @@ a {
   content: "";
   position: absolute;
   left: 50%;
-  top: -34px;
+  top: -40px;
   transform: translate(-50%);
   width: 100px;
   height: 4px;
