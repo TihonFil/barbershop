@@ -24,17 +24,17 @@
    text-align: center;
 }
 
-.intro__colm-title {
+.intro-colm__news-title {
    padding-top: 45px;
    padding-bottom: 25px;
 }
 
-.intro__colm-text {
+.intro-colm__news-text {
    position: relative;
    padding-bottom: 20px;
 }
 
-.intro__colm-text + .intro__colm-text:after {
+.intro-colm__news-text + .intro-colm__news-text:after {
    content: "";
    position: absolute;
    left: 50%;
