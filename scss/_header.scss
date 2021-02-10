@@ -62,9 +62,12 @@
 .header__nav-link {
    color: $white;
    font-size: 21px;
-   transition: all 0.2s linear;
+   transition: color 0.2s linear;
    &:hover {
       color: $orange-hover;
+   }
+   &:focus {
+      outline: 2px solid $orange-hover;
    }
 }
 
