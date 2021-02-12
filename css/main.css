@@ -250,7 +250,6 @@ a {
   background-color: #f2f2f2;
   position: relative;
   border-radius: 4px;
-  padding-bottom: 40px;
 }
 
 .services__wrap::after {
@@ -266,8 +265,7 @@ a {
 
 .services__title {
   text-align: center;
-  padding-top: 30px;
-  margin: 0;
+  padding: 45px 0 25px 0;
 }
 
 .services__subtitle {
@@ -280,11 +278,23 @@ a {
 
 .services__colm {
   text-align: center;
+  padding: 20px 50px;
 }
 
 .services__colm-title {
   font-size: 24px;
   line-height: 32px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.services__ccolm-text {
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__colm-sum {
   font-weight: bold;
 }
 
