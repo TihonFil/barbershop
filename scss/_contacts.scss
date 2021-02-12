@@ -1,0 +1,25 @@
+.contacts {
+   color: $black;
+   padding-top: 80px;
+}
+
+.contacts__wrap {
+   background-color: $bg-white;
+   position: relative;
+   border-radius: 4px;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -40px;
+      transform: translate(-50%);
+      width: 100px;
+      height: 4px;
+      background-color: $orange-hover;
+   }
+}
+
+.contacts__title {
+   text-align: center;
+   padding: 30px 0;
+}
