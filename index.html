@@ -104,14 +104,24 @@
                   <h2 class="services__title title">Прайс-лист</h2>
                   <p class="services__subtitle">Парикмахерский зал</p>
                   <div class="col-md-4 services__colm">
-                     <h3 class="services__colm-title">Мужские стрижки</h3>
-                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Мужские стрижки</button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                           <li><button class="dropdown-item" type="button">Cтрижка</button></li>
-                           <li><button class="dropdown-item" type="button">Модельная стрижка</button></li>
-                           <li><button class="dropdown-item" type="button">Укладка волос</button></li>
-                        </ul>
+                     <div class="list-group" id="list-tab" role="tablist">
+                        <div class="dropdown services__dropdown">
+                           <button class="btn btn-secondary dropdown-toggle services__toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Мужские стрижки</button>
+                           <ul class="dropdown-menu services__toggle-list" aria-labelledby="dropdownMenu2">
+                              <li class="services__toggle-item">
+                                 <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                              </li>
+                              <li class="services__toggle-item">
+                                 <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                              </li>
+                              <li class="services__toggle-item">
+                                 <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                              </li>
+                              <li class="services__toggle-item">
+                                 <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                              </li>
+                           </ul>
+                        </div>
                      </div>
                   </div>
                   <div class="col-md-4 services__colm">
@@ -127,6 +137,17 @@
             <div class="container">
                <div class="row contacts__wrap">
                   <h2 class="contacts__title title">Контакты</h2>
+                  <div class="row">
+                     <div class="col-4"></div>
+                     <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                           <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Привет бро</div>
+                           <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Ты кто такой!?</div>
+                           <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">А ты хорош!</div>
+                           <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
