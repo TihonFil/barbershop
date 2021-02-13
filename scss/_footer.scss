@@ -1,0 +1,37 @@
+.footer__wrap {
+   padding: 30px 0;
+   text-align: center;
+}
+
+.footer__title {
+   font-family: "Potta One", cursive;
+   font-size: 38px;
+   letter-spacing: 6px;
+   text-transform: uppercase;
+   color: $orange-hover;
+}
+
+.footer__text {
+   font-family: "Potta One", cursive;
+   font-size: 32px;
+   padding-top: 5px;
+}
+
+.footer__contact {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__contact-social + .footer__contact-social {
+   padding-top: 10px;
+}
+
+.footer__colm-link {
+   color: $white;
+   &:hover {
+      color: $orange-hover;
+   }
+   &:active {
+      color: $orange-active;
+   }
+}
