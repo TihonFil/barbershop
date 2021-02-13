@@ -7,6 +7,7 @@
    background-color: $bg-white;
    position: relative;
    border-radius: 4px;
+   padding: 20px 0;
    &::after {
       content: "";
       position: absolute;
@@ -21,5 +22,52 @@
 
 .contacts__title {
    text-align: center;
-   padding: 30px 0;
+   padding: 25px 0;
+}
+
+.contacts__colm {
+   padding: 15px 50px;
+}
+
+.contacts__colm button {
+   padding: 0 5px;
+   &::after {
+      margin: 0;
+      margin-left: 10px;
+   }
+   &:focus {
+      border-color: $orange-hover;
+      box-shadow: 0 0 0 0.2rem rgb(230, 172, 0 / 25%);
+   }
+   &:not(.collapsed) {
+      color: $black;
+      background-color: transparent;
+   }
+}
+
+.contacts___colm-telephone {
+   color: $black;
+   font-weight: bold;
+   padding-left: 5px;
+   transition: color 0.2s linear;
+   &:hover {
+      color: $orange-hover;
+   }
+   &:active {
+      color: $orange-active;
+   }
+}
+
+.contacts__work-list {
+   padding: 0;
+}
+
+.contacts__work-item {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contacts__colm-map {
+   max-width: 100%;
+   border: 6px solid $white;
 }

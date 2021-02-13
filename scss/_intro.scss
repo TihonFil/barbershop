@@ -68,7 +68,6 @@
    letter-spacing: 1px;
    border: none;
    transition: all 0.2s linear;
-   outline: none;
    &:hover {
       color: $black;
       background-color: $orange-hover;
@@ -76,10 +75,6 @@
    &:active {
       color: $black;
       background-color: $orange-active;
-   }
-   &:focus {
-      transition: all 0 linear;
-      outline: 2px solid $orange-hover;
    }
 }
 

@@ -7,10 +7,6 @@
    padding-top: 5px;
 }
 
-.header__logo-link:focus {
-   outline: 2px solid $orange-hover;
-}
-
 .header__logo-img {
    background-color: $white;
    border-radius: 50%;
@@ -47,10 +43,6 @@
    margin: auto;
 }
 
-.header__contact-social:focus {
-   outline: 2px solid $orange-hover;
-}
-
 .header__contact-telephone {
    transition: color 0.2s linear;
    &:hover {
@@ -58,9 +50,6 @@
    }
    &:active {
       color: $orange-active;
-   }
-   &:focus {
-      outline: 2px solid $orange-hover;
    }
 }
 
@@ -82,9 +71,6 @@
    }
    &:active {
       color: $orange-active;
-   }
-   &:focus {
-      outline: 2px solid $orange-hover;
    }
 }
 
