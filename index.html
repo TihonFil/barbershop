@@ -16,16 +16,16 @@
          <header class="header">
             <div class="container">
                <div class="row header__wrap">
-                  <div class="col-md-3 header__colm">
+                  <div class="col-md-4 header__colm header__colm-hide">
                      <a href="" class="header__logo-link">
                         <img src="images/logo.svg" alt="scissors and comb" width="70" height="70" class="header__logo-img" />
                      </a>
                   </div>
-                  <div class="offset-md-1 col-md-4 header__colm">
+                  <div class="col-md-4 header__colm">
                      <h2 class="header__title">Archi</h2>
                      <p class="header__text">barbershop</p>
                   </div>
-                  <div class="offset-md-1 col-md-3 header__colm">
+                  <div class="col-md-4 header__colm">
                      <div class="header__contact">
                         <a href="tel:+7 (123) 123 45 67" class="header__contact-telephone">+7 (123) 123 45 67</a>
                         <a href="#" class="header__contact-social">
@@ -39,23 +39,21 @@
                      </div>
                   </div>
                </div>
-               <nav class="navbar navbar-expand-lg header__nav">
-                  <div class="collapse navbar-collapse header__nav-wrap" id="navbarNav">
-                     <ul class="navbar-nav header__nav-list">
-                        <li class="nav-item header__nav-item">
-                           <a class="nav-link header__nav-link" href="#">Новости</a>
-                        </li>
-                        <li class="nav-item header__nav-item">
-                           <a class="nav-link header__nav-link" href="#">Прайс-лист</a>
-                        </li>
-                        <li class="nav-item header__nav-item">
-                           <a class="nav-link header__nav-link" href="#">Галерея</a>
-                        </li>
-                        <li class="nav-item header__nav-item">
-                           <a class="nav-link header__nav-link" href="#">Контакты</a>
-                        </li>
-                     </ul>
-                  </div>
+               <nav class="header__nav">
+                  <ul class="header__nav-list">
+                     <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Новости</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Прайс-лист</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Галерея</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Контакты</a>
+                     </li>
+                  </ul>
                </nav>
             </div>
          </header>
@@ -63,13 +61,13 @@
             <div class="container">
                <h1 class="visually-hidden">barbershop Archi</h1>
                <div class="row intro__wrap">
-                  <div class="col-md-5 intro__colm">
+                  <div class="col intro__colm">
                      <h2 class="intro-colm__news-title title">Новости</h2>
                      <p class="intro-colm__news-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ex ab, est porro similique consectetur vitae consequuntur eos dolores obcaecati sequi sapiente laborum perferendis inventore voluptatum doloremque optio nobis eligendi!</p>
                      <p class="intro-colm__news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis doloribus eum laborum rerum, consectetur est quo earum tempore quas tenetur animi repellat voluptatem doloremque reprehenderit, numquam a, reiciendis libero.</p>
                      <p class="intro-colm__news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt, animi maiores odio dignissimos accusantium totam modi repellat autem ipsam soluta consequuntur similique necessitatibus deleniti nobis itaque a fuga velit!</p>
                   </div>
-                  <div class="offset-md-2 col-md-5 intro__colm">
+                  <div class="col intro__colm">
                      <h2 class="intro-colm__gallery-title title">Галерея</h2>
                      <div id="carouselExampleControls" class="carousel slide intro-gallery__carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -162,38 +160,42 @@
          <section class="contacts">
             <div class="container">
                <div class="row contacts__wrap">
-                  <h2 class="contacts__title title">Контакты</h2>
-                  <div class="col-md-3 contacts__colm">
-                     <ul class="contacts__colm-list">
-                        <li class="contacts__colm-item">
-                           <p class="contacts__colm-text">
-                              Телефон:
-                              <a href="tel:+7 (123) 123 45 67" class="contacts___colm-telephone">+7 (123) 123 45 67</a>
-                           </p>
-                        </li>
-                        <li class="contacts__colm-item">
-                           <p class="contacts__colm-text">Марусино, Московская обл., 140009</p>
-                           <p class="contacts__colm-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3 contacts__colm">
-                     <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                           <p class="accordion-header" id="flush-headingOne">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Часы работы:</button>
-                           </p>
-                           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">
-                                 <ul class="contacts__work-list">
-                                    <li class="contacts__work-item">Понедельник : <span>08:45-18:00</span></li>
-                                    <li class="contacts__work-item">Вторник : <span>08:45-18:00</span></li>
-                                    <li class="contacts__work-item">Среда : <span>08:45-18:00</span></li>
-                                    <li class="contacts__work-item">Четверг : <span>08:45-18:00</span></li>
-                                    <li class="contacts__work-item">Пятница : <span>08:45-18:00</span></li>
-                                    <li class="contacts__work-item">Суббота : <span>08:45-14:00</span></li>
-                                    <li class="contacts__work-item">Воскресенье : <span>Выходной</span></li>
-                                 </ul>
+                  <div class="col-md-6">
+                     <h2 class="contacts__title title">Контакты</h2>
+                     <div class="row contacts__colm-wrap">
+                        <div class="col contacts__colm">
+                           <ul class="contacts__colm-list">
+                              <li class="contacts__colm-item">
+                                 <p class="contacts__colm-text">
+                                    Телефон:
+                                    <a href="tel:+7 (123) 123 45 67" class="contacts___colm-telephone">+7 (123) 123 45 67</a>
+                                 </p>
+                              </li>
+                              <li class="contacts__colm-item">
+                                 <p class="contacts__colm-text">Марусино, Московская обл., 140009</p>
+                                 <p class="contacts__colm-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col contacts__colm">
+                           <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                 <p class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Часы работы:</button>
+                                 </p>
+                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                       <ul class="contacts__work-list">
+                                          <li class="contacts__work-item">Понедельник : <span>08:45-18:00</span></li>
+                                          <li class="contacts__work-item">Вторник : <span>08:45-18:00</span></li>
+                                          <li class="contacts__work-item">Среда : <span>08:45-18:00</span></li>
+                                          <li class="contacts__work-item">Четверг : <span>08:45-18:00</span></li>
+                                          <li class="contacts__work-item">Пятница : <span>08:45-18:00</span></li>
+                                          <li class="contacts__work-item">Суббота : <span>08:45-14:00</span></li>
+                                          <li class="contacts__work-item">Воскресенье : <span>Выходной</span></li>
+                                       </ul>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
