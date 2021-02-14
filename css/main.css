@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -250,17 +254,25 @@ li {
   padding: 45px 0 25px 0;
 }
 
-.services__subtitle {
-  font-size: 28px;
-  line-height: 34px;
-  text-align: center;
+.services__title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 25px;
   border-bottom: 2px solid #e6ac00;
 }
 
+.services__subtitle {
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  padding-right: 15px;
+  margin: 0;
+}
+
 .services__colm {
   text-align: center;
-  padding: 20px 50px;
+  padding: 20px 20px;
 }
 
 .services__colm-title {
@@ -278,6 +290,12 @@ li {
 
 .services__colm-sum {
   font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .services__colm {
+    padding: 20px 50px;
+  }
 }
 
 .contacts {
@@ -309,7 +327,7 @@ li {
 }
 
 .contacts__colm {
-  padding: 15px 50px;
+  padding: 15px 15px;
 }
 
 .contacts__colm button {
@@ -360,9 +378,25 @@ li {
   border: 6px solid #ffffff;
 }
 
+@media (min-width: 1400px) {
+  .contacts__colm {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .accordion-body {
+    padding: 5px;
+  }
+}
+
 .footer__wrap {
   padding: 30px 0;
   text-align: center;
+}
+
+.footer__colm {
+  margin: auto;
 }
 
 .footer__title {
@@ -382,6 +416,10 @@ li {
 .footer__contact {
   display: flex;
   flex-direction: column;
+}
+
+.footer__contact-social {
+  margin: auto;
 }
 
 .footer__contact-social + .footer__contact-social {

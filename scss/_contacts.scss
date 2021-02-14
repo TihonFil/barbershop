@@ -26,7 +26,7 @@
 }
 
 .contacts__colm {
-   padding: 15px 50px;
+   padding: 15px 15px;
 }
 
 .contacts__colm button {
@@ -70,4 +70,16 @@
 .contacts__colm-map {
    max-width: 100%;
    border: 6px solid $white;
+}
+
+@media (min-width: 1400px) {
+   .contacts__colm {
+      padding: 10px 40px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .accordion-body {
+      padding: 5px;
+   }
 }

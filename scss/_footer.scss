@@ -3,6 +3,10 @@
    text-align: center;
 }
 
+.footer__colm {
+   margin: auto;
+}
+
 .footer__title {
    font-family: "Potta One", cursive;
    font-size: 38px;
@@ -20,6 +24,10 @@
 .footer__contact {
    display: flex;
    flex-direction: column;
+}
+
+.footer__contact-social {
+   margin: auto;
 }
 
 .footer__contact-social + .footer__contact-social {

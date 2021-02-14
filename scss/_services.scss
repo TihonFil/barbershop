@@ -24,17 +24,25 @@
    padding: 45px 0 25px 0;
 }
 
-.services__subtitle {
-   font-size: 28px;
-   line-height: 34px;
-   text-align: center;
+.services__title-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    padding-bottom: 25px;
    border-bottom: 2px solid $orange-hover;
 }
 
+.services__subtitle {
+   font-size: 28px;
+   line-height: 34px;
+   text-align: center;
+   padding-right: 15px;
+   margin: 0;
+}
+
 .services__colm {
    text-align: center;
-   padding: 20px 50px;
+   padding: 20px 20px;
 }
 
 .services__colm-title {
@@ -52,4 +60,10 @@
 
 .services__colm-sum {
    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+   .services__colm {
+      padding: 20px 50px;
+   }
 }
