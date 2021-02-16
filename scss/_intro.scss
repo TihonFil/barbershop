@@ -104,6 +104,7 @@
 @media (max-width: 991px) {
    .intro__wrap {
       display: block;
+      padding: 0 40px;
       &::after {
          display: none;
       }
@@ -113,5 +114,11 @@
    }
    .intro__colm {
       padding: 0 15px;
+   }
+   .intro-colm__gallery-title {
+      padding-top: 10px;
+   }
+   .intro-gallery__button-wrap {
+      justify-content: space-around;
    }
 }

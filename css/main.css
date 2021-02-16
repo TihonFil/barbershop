@@ -245,6 +245,7 @@ li {
 @media (max-width: 991px) {
   .intro__wrap {
     display: block;
+    padding: 0 40px;
   }
   .intro__wrap::after {
     display: none;
@@ -254,6 +255,12 @@ li {
   }
   .intro__colm {
     padding: 0 15px;
+  }
+  .intro-colm__gallery-title {
+    padding-top: 10px;
+  }
+  .intro-gallery__button-wrap {
+    justify-content: space-around;
   }
 }
 
@@ -312,7 +319,7 @@ li {
   padding-bottom: 20px;
 }
 
-.services__ccolm-item {
+.services__colm-item {
   display: flex;
   justify-content: space-between;
   padding: 3px 0;
@@ -325,6 +332,13 @@ li {
 @media (min-width: 1200px) {
   .services__colm {
     padding: 20px 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .services__colm-item {
+    align-items: center;
+    text-align: start;
   }
 }
 
