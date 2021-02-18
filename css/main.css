@@ -136,9 +136,54 @@ li {
   .header__colm-hide {
     display: none;
   }
-  .header__nav {
-    display: none;
-  }
+}
+
+.header-burger__btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 30;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  border: none;
+}
+
+.header-burger__btn:hover {
+  background-color: #e6ac00;
+}
+
+.header-burger__btn:active {
+  background-color: #b38600;
+}
+
+.header-burger__lines,
+.header-burger__lines::after,
+.header-burger__lines::before {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.header-burger__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-burger__lines::before {
+  content: "";
+  top: -7px;
+  transform: translate(-50%);
+}
+
+.header-burger__lines::after {
+  content: "";
+  top: 7px;
+  transform: translate(-50%);
 }
 
 .intro {
