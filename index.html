@@ -13,7 +13,7 @@
    </head>
    <body>
       <div class="body__wrap">
-         <header class="header">
+         <header class="header" id="main">
             <div class="container">
                <div class="row header__wrap">
                   <div class="col-md-4 header__colm header__colm-hide">
@@ -39,25 +39,28 @@
                      </div>
                   </div>
                </div>
-               <nav class="header__nav">
+               <nav class="header__nav header__nav-active">
                   <ul class="header__nav-list">
                      <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Новости</a>
+                        <a class="header__nav-link header__nav-link--active" href="#main">barbershop</a>
                      </li>
                      <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Прайс-лист</a>
+                        <a class="header__nav-link" href="#news">Новости</a>
                      </li>
                      <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Галерея</a>
+                        <a class="header__nav-link" href="#services">Прайс-лист</a>
                      </li>
                      <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Контакты</a>
+                        <a class="header__nav-link" href="#gallery">Галерея</a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a class="header__nav-link" href="#contacts">Контакты</a>
                      </li>
                   </ul>
                   <button class="header-burger__btn">
                      <span class="header-burger__lines"></span>
-                   </button>
-                   <div class="header-burger__overlay"></div>
+                  </button>
+                  <div class="header-burger__overlay"></div>
                </nav>
             </div>
          </header>
@@ -65,14 +68,14 @@
             <div class="container">
                <h1 class="visually-hidden">barbershop Archi</h1>
                <div class="row intro__wrap">
-                  <div class="col intro__colm">
+                  <div class="col intro__colm" id="news">
                      <h2 class="intro-colm__news-title title">Новости</h2>
                      <p class="intro-colm__news-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ex ab, est porro similique consectetur vitae consequuntur eos dolores obcaecati sequi sapiente laborum perferendis inventore voluptatum doloremque optio nobis eligendi!</p>
                      <p class="intro-colm__news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis doloribus eum laborum rerum, consectetur est quo earum tempore quas tenetur animi repellat voluptatem doloremque reprehenderit, numquam a, reiciendis libero.</p>
                      <p class="intro-colm__news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt, animi maiores odio dignissimos accusantium totam modi repellat autem ipsam soluta consequuntur similique necessitatibus deleniti nobis itaque a fuga velit!</p>
                   </div>
                   <div class="col intro__colm">
-                     <h2 class="intro-colm__gallery-title title">Галерея</h2>
+                     <h2 class="intro-colm__gallery-title title" id="gallery">Галерея</h2>
                      <div id="carouselExampleControls" class="carousel slide intro-gallery__carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
                            <div class="carousel-item active">
@@ -103,7 +106,7 @@
          <section class="services">
             <div class="container">
                <div class="row services__wrap">
-                  <h2 class="services__title title">Прайс-лист</h2>
+                  <h2 class="services__title title" id="services">Прайс-лист</h2>
                   <div class="services__title-wrap">
                      <p class="services__subtitle">Парикмахерский зал</p>
                      <img src="images/services-borb.svg" alt="hairdressing chair" class="services__img" width="40" height="40" />
@@ -161,7 +164,7 @@
                </div>
             </div>
          </section>
-         <section class="contacts">
+         <section class="contacts" id="contacts">
             <div class="container">
                <div class="row contacts__wrap">
                   <div class="col-md-6">
