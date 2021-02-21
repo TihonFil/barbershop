@@ -46,12 +46,17 @@
 
 .header__contact-telephone {
    transition: color 0.2s linear;
+   padding-bottom: 10px;
    &:hover {
       color: $orange-hover;
    }
    &:active {
       color: $orange-active;
    }
+}
+
+.header__contact-social + .header__contact-social {
+   padding-left: 15px;
 }
 
 .header__nav-list {
@@ -110,6 +115,7 @@
       &:focus {
          outline: none;
          background-color: $orange-hover;
+         border: 2px solid $bg-white;
          transition: all 0.2s ease;
          & .header-burger__lines,
          .header-burger__lines::before,
@@ -131,7 +137,7 @@
       width: 20px;
       height: 3px;
       background-color: $bg-black;
-      transition: all 0.1s linear;
+      transition: all 0.2s linear;
    }
 
    .header-burger__lines {
@@ -183,6 +189,7 @@
 
    .header__nav-item {
       padding: 15px 15px;
+      border-bottom: 1px solid $bg-white;
    }
 
    .header__nav-link {

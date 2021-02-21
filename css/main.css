@@ -21,8 +21,12 @@ li {
   list-style: none;
 }
 
+img {
+  height: auto;
+}
+
 .body__wrap {
-  background-image: url(../images/background.png);
+  background-image: url(../images/background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -93,6 +97,7 @@ li {
 
 .header__contact-telephone {
   transition: color 0.2s linear;
+  padding-bottom: 10px;
 }
 
 .header__contact-telephone:hover {
@@ -101,6 +106,10 @@ li {
 
 .header__contact-telephone:active {
   color: #b38600;
+}
+
+.header__contact-social + .header__contact-social {
+  padding-left: 15px;
 }
 
 .header__nav-list {
@@ -161,6 +170,7 @@ li {
   .header-burger__btn:hover, .header-burger__btn:focus {
     outline: none;
     background-color: #e6ac00;
+    border: 2px solid #f2f2f2;
     transition: all 0.2s ease;
   }
   .header-burger__btn:hover .header-burger__lines,
@@ -181,7 +191,7 @@ li {
     width: 20px;
     height: 3px;
     background-color: #262626;
-    transition: all 0.1s linear;
+    transition: all 0.2s linear;
   }
   .header-burger__lines {
     top: 50%;
@@ -228,6 +238,7 @@ li {
   }
   .header__nav-item {
     padding: 15px 15px;
+    border-bottom: 1px solid #f2f2f2;
   }
   .header__nav-link {
     font-size: 22px;

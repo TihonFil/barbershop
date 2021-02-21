@@ -21,8 +21,12 @@ li {
    list-style: none;
 }
 
+img {
+   height: auto;
+}
+
 .body__wrap {
-   background-image: url(../images/background.png);
+   background-image: url(../images/background.jpeg);
    background-repeat: no-repeat;
    background-size: cover;
 }
