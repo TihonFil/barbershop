@@ -609,7 +609,7 @@ img {
     padding: 20px 40px;
   }
   .contacts__colm-map {
-    height: auto;
+    max-height: 300px;
   }
 }
 
@@ -665,4 +665,13 @@ img {
 
 .footer__colm-link:active {
   color: #b38600;
+}
+
+@media (max-width: 767px) {
+  .footer__contact {
+    display: block;
+  }
+  .footer__contact-social {
+    padding: 10px;
+  }
 }

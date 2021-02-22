@@ -43,3 +43,12 @@
       color: $orange-active;
    }
 }
+
+@media (max-width: 767px) {
+   .footer__contact {
+      display: block;
+   }
+   .footer__contact-social {
+      padding: 10px;
+   }
+}
