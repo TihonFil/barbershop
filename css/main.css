@@ -452,6 +452,8 @@ img {
   align-items: center;
   padding: 25px 0 15px 0;
   border-bottom: 2px solid #e6ac00;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .services__subtitle {
@@ -468,15 +470,20 @@ img {
 }
 
 .services__colm {
-  padding: 20px 20px;
-  border-bottom: 2px solid #262626;
+  padding: 0 20px;
+  border-bottom: 1px solid #262626;
+}
+
+.services__colm:last-child {
+  padding-bottom: 10px;
+  border-bottom: none;
 }
 
 .services__colm-title {
   font-size: 26px;
   line-height: 34px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding: 5px 0;
   text-align: center;
 }
 
@@ -484,10 +491,11 @@ img {
   position: relative;
   display: flex;
   border: none;
-  outline: none;
+  outline: #e6ac00;
   background-color: transparent;
   width: 100%;
-  padding: 5px 0;
+  padding: 5px 10px;
+  text-align: start;
   transition: all 0.2s linear;
 }
 
@@ -500,6 +508,7 @@ img {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+  transition: opacity 0.2s linear;
 }
 
 .services__colm-button::before {
@@ -511,13 +520,14 @@ img {
   right: 17px;
   top: 50%;
   transform: translateY(-50%);
+  transition: opacity 0.2s linear;
 }
 
-.services__colm-button--active::before {
-  display: none;
+.services__colm-button:not(.collapsed)::before {
+  opacity: 0;
 }
 
-.services__colm-button--active::after {
+.services__colm-button:not(.collapsed)::after {
   opacity: 0.5;
 }
 
@@ -528,10 +538,6 @@ img {
   text-align: center;
 }
 
-.services__colm-list {
-  display: none;
-}
-
 .services__colm-list--active {
   display: block;
 }
@@ -540,7 +546,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #b3b3b3;
 }
 
@@ -551,7 +557,7 @@ img {
 
 @media (min-width: 1200px) {
   .services__colm {
-    padding: 20px 50px;
+    padding: 0 50px;
   }
 }
 
@@ -563,6 +569,10 @@ img {
 }
 
 @media (max-width: 767px) {
+  .services__title-wrap {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .services__colm {
     padding: 20px 40px;
     flex: auto;
@@ -634,7 +644,7 @@ img {
 .contacts___colm-telephone {
   color: #000000;
   font-weight: bold;
-  padding-left: 5px;
+  padding: 5px;
   transition: color 0.2s linear;
 }
 

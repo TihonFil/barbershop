@@ -32,6 +32,8 @@
    align-items: center;
    padding: 25px 0 15px 0;
    border-bottom: 2px solid $orange-hover;
+   margin-left: 100px;
+   margin-right: 100px;
 }
 
 .services__subtitle {
@@ -48,15 +50,20 @@
 }
 
 .services__colm {
-   padding: 20px 20px;
-   border-bottom: 2px solid $bg-black;
+   padding: 0 20px;
+   border-bottom: 1px solid $bg-black;
+}
+
+.services__colm:last-child {
+   padding-bottom: 10px;
+   border-bottom: none;
 }
 
 .services__colm-title {
    font-size: 26px;
    line-height: 34px;
    font-weight: bold;
-   padding-bottom: 20px;
+   padding: 5px 0;
    text-align: center;
 }
 
@@ -64,10 +71,11 @@
    position: relative;
    display: flex;
    border: none;
-   outline: none;
+   outline: $orange-hover;
    background-color: transparent;
    width: 100%;
-   padding: 5px 0;
+   padding: 5px 10px;
+   text-align: start;
    transition: all 0.2s linear;
    &::after {
       content: "";
@@ -78,6 +86,7 @@
       right: 10px;
       top: 50%;
       transform: translateY(-50%);
+      transition: opacity 0.2s linear;
    }
    &::before {
       content: "";
@@ -88,12 +97,13 @@
       right: 17px;
       top: 50%;
       transform: translateY(-50%);
+      transition: opacity 0.2s linear;
    }
 }
 
-.services__colm-button--active {
+.services__colm-button:not(.collapsed) {
    &::before {
-      display: none;
+      opacity: 0;
    }
    &::after {
       opacity: 0.5;
@@ -107,10 +117,6 @@
    text-align: center;
 }
 
-.services__colm-list {
-   display: none;
-}
-
 .services__colm-list--active {
    display: block;
 }
@@ -119,7 +125,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 5px 0;
+   padding: 10px 0;
    border-bottom: 1px solid $line;
 }
 
@@ -130,7 +136,7 @@
 
 @media (min-width: 1200px) {
    .services__colm {
-      padding: 20px 50px;
+      padding: 0 50px;
    }
 }
 
@@ -142,6 +148,10 @@
 }
 
 @media (max-width: 767px) {
+   .services__title-wrap {
+      margin-left: 5px;
+      margin-right: 5px;
+   }
    .services__colm {
       padding: 20px 40px;
       flex: auto;
