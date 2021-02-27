@@ -28,7 +28,7 @@
 }
 
 .contacts__colm {
-   padding: 15px 15px;
+   padding: 10px 40px;
 }
 
 .contacts__colm button {
@@ -74,15 +74,18 @@
    border: 6px solid $white;
 }
 
-@media (min-width: 1400px) {
-   .contacts__colm {
-      padding: 10px 40px;
+@media (max-width: 1400px) {
+   .accordion-body {
+      padding: 5px;
    }
 }
 
 @media (max-width: 1200px) {
-   .accordion-body {
-      padding: 5px;
+   .contacts__wrap {
+      padding: 20px 30px;
+   }
+   .contacts__colm {
+      padding: 10px 10px;
    }
 }
 
@@ -90,11 +93,17 @@
    .contacts__colm-wrap {
       display: block;
    }
+   .contacts__colm {
+      padding: 10px 20px;
+   }
 }
 
 @media (max-width: 767px) {
    .contacts__wrap {
       padding: 20px 40px;
+   }
+   .contacts__colm {
+      padding: 10px 10px;
    }
    .contacts__colm-map {
       max-height: 300px;
