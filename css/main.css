@@ -49,6 +49,10 @@ img {
   letter-spacing: 1px;
 }
 
+.lock {
+  overflow-y: hidden;
+}
+
 .header {
   letter-spacing: 1px;
 }
@@ -223,10 +227,12 @@ img {
   }
   .header__nav-list {
     padding-top: 40px;
+    padding-bottom: 50px;
     position: fixed;
     top: 45px;
     z-index: 20;
     display: block;
+    text-align: center;
     height: 100%;
     background-color: #000000;
     overflow-y: auto;
@@ -239,6 +245,7 @@ img {
   .header__nav-item {
     padding: 15px 15px;
     border-bottom: 1px solid #f2f2f2;
+    margin: 0 15px;
   }
   .header__nav-link {
     font-size: 22px;
@@ -264,6 +271,7 @@ img {
   }
   .header__nav-active .header-burger__overlay {
     display: block;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -402,7 +410,10 @@ img {
 
 @media (max-width: 375px) {
   .intro__wrap {
-    padding: 0 20px;
+    padding: 0 15px;
+  }
+  .intro__colm {
+    padding: 0;
   }
   .intro-colm__news-title {
     padding-top: 25px;
@@ -763,6 +774,7 @@ img {
 @media (max-width: 767px) {
   .footer__contact {
     display: block;
+    padding-bottom: 5px;
   }
   .footer__contact-social {
     padding: 10px;
