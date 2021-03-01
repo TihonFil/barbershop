@@ -14,13 +14,10 @@ const burgerBtn = function () {
 }
 burgerBtn();
 
-const linkClick = function () {
-   links.addEventListener('click', function () {
-      nav.classList.remove('header__nav-active');
-      body.classList.remove('lock');
-   });
-}
-linkClick();
+links.forEach(el => el.addEventListener('click', event => {
+   nav.classList.toggle('header__nav-active');
+   body.classList.toggle('lock');
+}));
 
 const overlayClick = function () {
    overlay.addEventListener('click', function ()  {
